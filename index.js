@@ -35,6 +35,8 @@ email.addEventListener("change", (e) => {
 phoneNumber.addEventListener("change", (e) => {
     const phone = e.target.value
     details.phoneNumber = phone
+    // using regular expression validate if the number is a valid kenyan number 
+    // if it's not then alert the function, notify the user that the number is not valid
 })
 
 password.addEventListener("change", (e) => {
@@ -47,8 +49,14 @@ confirmPassword.addEventListener("change", (e) => {
     details.confirmPassword = confirmPassword
 })
 
+function ValidatePassword(str1, str2){
+   // confirm password and confirm password are the same
+   // retuen a boolean if the password match
+}
 submitButton.addEventListener("click", () => {
-    console.log(details)
+    const {firstName, lastName, email, password, phoneNumber, confirmPassword} = details
+
+    ValidatePassword(password, confirmPassword)
 })
 
 
