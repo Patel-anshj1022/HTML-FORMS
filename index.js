@@ -34,9 +34,14 @@ email.addEventListener("change", (e) => {
 
 phoneNumber.addEventListener("change", (e) => {
     const phone = e.target.value
-    details.phoneNumber = phone
-    // using regular expression validate if the number is a valid kenyan number 
-    // if it's not then alert the function, notify the user that the number is not valid
+    const phoneNumber = /^( \+254|0|254)(7)\d{8}$/;
+    if (phoneNumber.test(phone)) {
+        details.phoneNumber = phone;
+        console.log("Valid Kenyan phone number");
+    } else {
+        alert("Invalid phone number! Please enter a valid Kenyan phone number.");
+        e.target.value = ""; 
+    }
 })
 
 password.addEventListener("change", (e) => {
@@ -50,9 +55,15 @@ confirmPassword.addEventListener("change", (e) => {
 })
 
 function ValidatePassword(str1, str2){
-   // confirm password and confirm password are the same
-   // retuen a boolean if the password match
+    if (str1 == str2) {
+        console.log("Passwords match");
+        return true;
+    } else {
+        alert("Passwords do not match! Please re-enter the password.");
+        return false;
+    }
 }
+
 submitButton.addEventListener("click", () => {
     const {firstName, lastName, email, password, phoneNumber, confirmPassword} = details
 
