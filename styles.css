@@ -34,7 +34,7 @@ input[type="password"],
 input[type="checkbox"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px; /* Increased margin for more space between inputs */
+    margin-bottom: 20px; 
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
@@ -57,12 +57,12 @@ button {
     background: linear-gradient(45deg, #007BFF, #0056b3);
     color: white;
     border: none;
-    padding: 12px 20px; /* Increased padding for the button */
+    padding: 12px 20px; 
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 10px; /* Added margin above the button */
+    margin-top: 10px; 
 }
 
 button:hover {
@@ -74,7 +74,7 @@ button:active {
     transform: translateY(0);
 }
 
-/* Responsive styles */
+
 @media (max-width: 500px) {
     div {
         padding: 15px;

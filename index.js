@@ -17,6 +17,7 @@ const email = document.getElementById("email")
 const phoneNumber = document.getElementById("phoneNumber")
 const password = document.getElementById("password")
 const confirmPassword = document.getElementById("confirmPassword")
+const alertSpan = document.getElementById("alert-password")
 firstName.addEventListener("change", (e) => {
 const name = e.target.value
 details.firstName = name
@@ -68,7 +69,9 @@ submitButton.addEventListener("click", () => {
     const {firstName, lastName, email, password, phoneNumber, confirmPassword} = details
 
     ValidatePassword(password, confirmPassword)
+    window.location.href = "/dashboard.html"
 })
 
-
+alertSpan.classList.remove("alert-off-message")
+alertSpan.classList.add("alert-on-message")
 
