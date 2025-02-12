@@ -91,8 +91,4 @@ submitButton.addEventListener("click", (e) =>{
     alertSpan.classList.remove("alert-off-message")
     alertSpan.classList.add("alert-on-message")
    }
-
-    
 })
-
-
