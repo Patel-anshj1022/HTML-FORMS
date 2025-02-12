@@ -1,86 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #4b8cce;
+  background-color: #4b8cce;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
 }
 
-h1 {
-    text-align: center;
-    color: #020005;
+h1{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Josefin Sans", serif;
 }
-
-div {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
+label[for="acceptTerms"]{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Josefin Sans", serif;
 }
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #020005;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="password"],
 input[type="checkbox"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px; 
+    width: 25px; 
+    height: 25px;
+    cursor: pointer;
+  }
+#submitButton{
+    font-family: "Josefin Sans", serif;
+    width: 300px;
+    height: 30px;
+    background-color: #348eb1b7;
     border: none;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    color: #010000;
-    transition: background 0.8s, box-shadow 0.3s;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    
+}
+#con1 > div {
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+
+
+
+:placeholder-shown{
+    color: #aa8f61;
+    font-family: "Fredoka", serif;
+}
+
+
+input{
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent */
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    border-radius: 10px;
 }
 
 input:focus {
-    outline: none;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3); /* Less transparent when focused */
 }
 
-input[type="checkbox"] {
-    width: auto;
-    margin-right: 10px;
-}
-
-button {
-    background: linear-gradient(45deg, #007BFF, #0056b3);
+input::placeholder {
     color: white;
-    border: none;
-    padding: 12px 20px; 
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 10px; 
 }
 
-button:hover {
-    background: linear-gradient(45deg, #0056b3, #004494);
-    transform: translateY(-2px);
+.alert-on-message{
+    display: block;
 }
 
-button:active {
-    transform: translateY(0);
-}
-
-
-@media (max-width: 500px) {
-    div {
-        padding: 15px;
-    }
-
-    button {
-        width: 100%;
-    }
+.alert-off-message{
+    display: none;
 }
