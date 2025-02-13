@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML FORMS</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <h1>Fill in your info!</h1>
-        <div>
-            <label for="firstName">first Name :</label>
-            <input id="firstName" name="firstName" type="text" placeholder="First Name" required>
-            
+    <div>
+        <h1>HTML FORMS</h1>
+        <div class="form-container">
+            <div>
+                <label for="firstName">First Name :</label>
+                <input id="firstName" name="firstName" type="text" placeholder="First Name" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name :</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number :</label>
+                <input id="phoneNumber" name="phoneNumber" type="number" placeholder="Phone Number" required>
+            </div>
+            <div>
+                <span id="alert-password" class="alert-off-message">Passwords do not go along with each other! Try again</span>
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password :</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required>
+            </div>
+            <div>
+                <label for="acceptTerms">I accept terms and conditions</label>
+                <input id="acceptTerms" name="acceptTerms" type="checkbox" required>
+            </div>
+            <button id="submitBtn">Submit</button> 
         </div>
-        <div>
-            <label for="lastName">Last Name :</label>
-            <input id="lastName" name="lastName" type="text" placeholder="Last Name" required>
-        </div>
-        <div>
-            <label for="email"> Email :</label>
-            <input id="email" name="email" type="email" placeholder="Email" required>
-        </div>
-        <div>
-            <label for="phoneNumber">Phone Number :</label>
-            <input id="phoneNumber" name="phoneNumber" type="number" placeholder="Phone Number" required>
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" placeholder="Password" required>
-        </div>
-        <div>
-            <label for="confirmPassword">Confirm Password :</label>
-            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required>
-        </div>
-        <div>
-            <label for="acceptTerms">I accept terms and conditions</label>
-            <input id="acceptTerms" name="acceptTerms" type="checkbox" placeholder="Accept Terms" required>
-        </div>
-        <button id="submitBtn">submit</button>
     </div>
     <script src="./index.js"></script>
 </body>

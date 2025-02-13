@@ -10,7 +10,7 @@ function validateNames(firstName, lastName){
         return false
     } else {
         return true
-    }
+    }   
 
 }
 function validateEmail(email){
